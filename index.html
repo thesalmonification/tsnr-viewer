@@ -67,6 +67,36 @@
   }
 }
 
+#toggle-sidebar {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 18px;
+  padding: 6px 10px;
+  background: var(--blue-medium);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* SHOW BUTTON + COLLAPSE SIDEBAR ON MOBILE */
+@media (max-width: 900px) {
+
+  #toggle-sidebar {
+    display: block;
+  }
+
+  #sidebar.collapsed {
+    display: none;
+  }
+
+  #main {
+    height: calc(100vh - 80px);
+  }
+}
+
 
     /* SIDEBAR */
     #sidebar {
@@ -162,7 +192,10 @@
 <body>
 
   <div id="sidebar">
-    <div id="header">Texas Society of Neuroradiology<br>Abstract Viewer</div>
+<div id="header">
+  Texas Society of Neuroradiology<br>Abstract Viewer
+  <button id="toggle-sidebar" onclick="toggleSidebar()">☰ Menu</button>
+</div>
     <div id="logo"></div>
 
     <input id="search" placeholder="Search abstracts…">
@@ -176,6 +209,11 @@
 
 <script src="abstracts.js"></script>
 <script>
+
+  function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('collapsed');
+}
+
   const searchBox = document.getElementById('search');
   const categoryFilter = document.getElementById('category-filter');
   const list = document.getElementById('list');
