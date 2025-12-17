@@ -66,7 +66,7 @@ const abstracts = [
 
   {
     title: "Evaluation of Conventional Deep Learning and Slice-Aware Models For High Sensitivity Intracranial Hemorrhage Coverage",
-    category: "Excerpta",
+    category: "Scientific",
     author: "Souradeep Bhattacharya",
     institution: "EnMed",
     file: "abstract_09.pdf"
@@ -76,7 +76,7 @@ const abstracts = [
     title: "Intraventricular Cavernous Malformation: A Rare Entity in an Unusual Location",
     category: "Excerpta",
     author: "Adam Stroh",
-    institution: "Institution TBD",
+    institution: "UTHealth",
     file: "abstract_10.pdf"
   }
 
