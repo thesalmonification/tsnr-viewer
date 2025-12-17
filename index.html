@@ -21,6 +21,53 @@
       background: var(--background);
     }
 
+    /* MOBILE RESPONSIVE LAYOUT ------------------------------------- */
+@media (max-width: 900px) {
+
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--blue-medium);
+    height: auto;
+  }
+
+  #main {
+    width: 100%;
+    border-left: none;
+    height: calc(100vh - 350px);
+  }
+
+  #viewer {
+    height: 100%;
+  }
+
+  #list {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  #header {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #search,
+  #category-filter {
+    font-size: 16px;
+  }
+
+  .item {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+
     /* SIDEBAR */
     #sidebar {
       width: 350px;
