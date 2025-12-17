@@ -21,82 +21,7 @@
       background: var(--background);
     }
 
-    /* MOBILE RESPONSIVE LAYOUT ------------------------------------- */
-@media (max-width: 900px) {
-
-  body {
-    flex-direction: column;
-    height: auto;
-  }
-
-  #sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 3px solid var(--blue-medium);
-    height: auto;
-  }
-
-  #main {
-    width: 100%;
-    border-left: none;
-    height: calc(100vh - 350px);
-  }
-
-  #viewer {
-    height: 100%;
-  }
-
-  #list {
-    max-height: 200px;
-    overflow-y: auto;
-  }
-
-  #header {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  #search,
-  #category-filter {
-    font-size: 16px;
-  }
-
-  .item {
-    font-size: 15px;
-    padding: 12px;
-  }
-}
-
-#toggle-sidebar {
-  display: none;
-  position: absolute;
-  right: 16px;
-  top: 12px;
-  font-size: 18px;
-  padding: 6px 10px;
-  background: var(--blue-medium);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* SHOW BUTTON + COLLAPSE SIDEBAR ON MOBILE */
-@media (max-width: 900px) {
-
-  #toggle-sidebar {
-    display: block;
-  }
-
-  #sidebar.collapsed {
-    display: none;
-  }
-
-  #main {
-    height: calc(100vh - 80px);
-  }
-}
-
+    
 
     /* SIDEBAR */
     #sidebar {
@@ -192,10 +117,7 @@
 <body>
 
   <div id="sidebar">
-<div id="header">
-  Texas Society of Neuroradiology<br>Abstract Viewer
-  <button id="toggle-sidebar" onclick="toggleSidebar()">☰ Menu</button>
-</div>
+    <div id="header">Texas Society of Neuroradiology<br>Abstract Viewer</div>
     <div id="logo"></div>
 
     <input id="search" placeholder="Search abstracts…">
@@ -209,11 +131,6 @@
 
 <script src="abstracts.js"></script>
 <script>
-
-  function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('collapsed');
-}
-
   const searchBox = document.getElementById('search');
   const categoryFilter = document.getElementById('category-filter');
   const list = document.getElementById('list');
