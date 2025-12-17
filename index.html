@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Texas Society of Neuroradiology – Abstract Viewer</title>
+  <style>
+    :root {
+      --blue-dark: #0a2540;
+      --blue-medium: #1e4e8c;
+      --blue-light: #dbe7f5;
+      --accent: #3c87fa;
+      --background: #f8f9fb;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: var(--blue-dark);
+      background: var(--background);
+    }
+
+    /* SIDEBAR */
+    #sidebar {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      border-right: 3px solid var(--blue-medium);
+      background: #fff;
+    }
+
+    #header {
+      background: var(--blue-dark);
+      color: white;
+      padding: 14px;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 3px solid var(--blue-medium);
+    }
+
+    /* Optional logo image */
+    #logo {
+      width: 100%;
+      height: 160px;
+      background-image: url('tsnr_logo.png');
+      background-size: cover;
+      background-position: center;
+      border-bottom: 3px solid var(--blue-medium);
+    }
+
+    /* SEARCH + FILTER */
+    #search {
+      width: 90%;
+      margin: 15px auto 5px;
+      padding: 10px;
+      border: 2px solid var(--blue-light);
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    #category-filter {
+      width: 93%;
+      margin: 10px auto;
+      padding: 10px;
+      border: 2px solid var(--blue-light);
+      border-radius: 6px;
+      font-size: 15px;
+      background: #fff;
+    }
+
+    /* ABSTRACT LIST */
+    #list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 16px 20px;
+    }
+
+    .item {
+      background: #fff;
+      border: 2px solid var(--blue-light);
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .item:hover {
+      background: var(--blue-light);
+      border-color: var(--accent);
+    }
+
+    .category-label {
+      font-size: 13px;
+      color: var(--blue-medium);
+    }
+
+    /* PDF PANEL */
+    #main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-left: 3px solid var(--blue-medium);
+    }
+
+    #viewer {
+      flex: 1;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="sidebar">
+    <div id="header">Texas Society of Neuroradiology<br>Abstract Viewer</div>
+    <div id="logo"></div>
+
+    <input id="search" placeholder="Search abstracts…">
+    <select id="category-filter"></select>
+    <div id="list"></div>
+  </div>
+
+  <div id="main">
+    <iframe id="viewer" src=""></iframe>
+  </div>
+
+<script src="abstracts.js"></script>
+<script>
+  const searchBox = document.getElementById('search');
+  const categoryFilter = document.getElementById('category-filter');
+  const list = document.getElementById('list');
+  const viewer = document.getElementById('viewer');
+
+  categories = [...new Set(abstracts.map(a => a.category))];
+  categoryFilter.innerHTML = `<option value="">All Categories</option>` +
+    categories.map(c => `<option value="${c}">${c}</option>`).join('');
+
+  function render() {
+    const q = searchBox.value.toLowerCase();
+    const cat = categoryFilter.value;
+    
+const filtered = abstracts.filter(a =>
+  (
+    a.title.toLowerCase().includes(q) ||
+    a.author.toLowerCase().includes(q) ||
+    a.institution.toLowerCase().includes(q)
+  ) &&
+  (!cat || a.category === cat)
+);
+
+
+list.innerHTML = filtered.map(a =>
+  `<div class="item" onclick="openPDF('${a.file}')">
+     <b>${a.title}</b><br>
+     <span class="category-label">${a.category}</span><br>
+     <span style="font-size:13px;">${a.author}</span><br>
+     <span style="font-size:13px; color:#555;">${a.institution}</span>
+   </div>`
+).join('');
+
+  }
+
+  function openPDF(file) {
+    viewer.src = `pdfs/${file}`;
+    resetIdle();
+  }
+
+  searchBox.addEventListener('input', render);
+  categoryFilter.addEventListener('change', render);
+
+  // Idle slideshow
+  let idleTimer = null;
+  function startIdle() {
+    let i = 0;
+    const files = abstracts.map(a => a.file);
+
+    idleTimer = setInterval(() => {
+      openPDF(files[i]);
+      i = (i + 1) % files.length;
+    }, 8000);
+  }
+
+  function resetIdle() {
+    clearInterval(idleTimer);
+    startIdle();
+  }
+
+  startIdle();
+  render();
+</script>
+
+</body>
+</html>
