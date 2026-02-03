@@ -199,6 +199,10 @@ const list = document.getElementById("list");
 const viewer = document.getElementById("viewer");
 const sidebar = document.getElementById("sidebar");
 
+function toggleSidebar() {
+  sidebar.classList.toggle("open");
+}
+
 /* ---------- CATEGORY SETUP ---------- */
 const categories = [...new Set(abstracts.map(a => a.category))];
 categoryFilter.innerHTML =
