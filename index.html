@@ -178,6 +178,12 @@ const list = document.getElementById("list");
 const viewer = document.getElementById("viewer");
 const sidebar = document.getElementById("sidebar");
 
+function isMobile() {
+  return window.matchMedia("(max-width: 900px)").matches;
+}
+
+
+
 function toggleSidebar() {
   sidebar.classList.toggle("open");
 }
@@ -214,19 +220,22 @@ function render() {
 
 /* ---------- PDF LOADER ---------- */
 function openPDF(file) {
+  const pdfPath = `pdfs/${file}`;
 
-  // close menu on mobile after selection
-  if (window.innerWidth < 900) {
-    sidebar.classList.remove("open");
+  if (isMobile()) {
+    // Open PDF fullscreen on mobile
+    window.open(pdfPath, "_blank");
+  } else {
+    // Embed PDF on desktop
+    const viewer = document.getElementById("viewer");
+    viewer.src = `${pdfPath}#view=FitH`;
   }
 
-  const path = `pdfs/${file}#view=FitH`;
-  fetch(path)
-    .then(r => viewer.src = r.ok ? path : "pdfs/default.pdf")
-    .catch(() => viewer.src = "pdfs/default.pdf");
-
-  resetIdle();
+  if (isMobile()) {
+    document.getElementById("sidebar").classList.remove("open");
+  }
 }
+
 
 
 
