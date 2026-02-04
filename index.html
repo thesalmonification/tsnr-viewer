@@ -24,6 +24,49 @@ body {
   background: var(--background);
 }
 
+#mobile-list {
+  display: none;
+  padding: 1rem;
+}
+
+#mobile-search {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-item {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.mobile-item h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.mobile-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  #sidebar,
+  #menu-button,
+  #viewer {
+    display: none;
+  }
+
+  #mobile-list {
+    display: block;
+  }
+}
+
+
+
 /* ---------- SIDEBAR ---------- */
 #sidebar {
   width: 350px;
@@ -164,6 +207,18 @@ body {
   <div id="list"></div>
 </div>
 
+<div id="mobile-list">
+  <input
+    type="text"
+    id="mobile-search"
+    placeholder="Search abstracts…"
+    oninput="renderMobileList()"
+  />
+  <div id="mobile-items"></div>
+</div>
+
+
+
 <!-- MAIN VIEW -->
 <div id="main">
   <iframe id="viewer"></iframe>
@@ -177,6 +232,36 @@ const categoryFilter = document.getElementById("category-filter");
 const list = document.getElementById("list");
 const viewer = document.getElementById("viewer");
 const sidebar = document.getElementById("sidebar");
+
+function renderMobileList() {
+  const container = document.getElementById("mobile-items");
+  const query = document
+    .getElementById("mobile-search")
+    .value.toLowerCase();
+
+  container.innerHTML = "";
+
+  abstracts
+    .filter(a =>
+      a.title.toLowerCase().includes(query) ||
+      a.author.toLowerCase().includes(query) ||
+      a.institution.toLowerCase().includes(query)
+    )
+    .forEach(a => {
+      const div = document.createElement("div");
+      div.className = "mobile-item";
+      div.onclick = () => openPDF(a.file);
+
+      div.innerHTML = `
+        <h3>${a.title}</h3>
+        <p>${a.author} • ${a.institution}</p>
+      `;
+
+      container.appendChild(div);
+    });
+}
+
+
 
 function isMobile() {
   return window.matchMedia("(max-width: 900px)").matches;
@@ -224,6 +309,7 @@ function openPDF(file) {
 
   if (isMobile()) {
     // Open PDF fullscreen on mobile
+    renderMobileList();
     window.open(pdfPath, "_blank");
   } else {
     // Embed PDF on desktop
