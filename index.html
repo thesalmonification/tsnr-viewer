@@ -212,11 +212,16 @@ function openPDF(file) {
   const pdfPath = `pdfs/${file}`;
 
   if (isMobile()) {
-    // Open PDF fullscreen in SAME TAB (mobile)
-    window.location.href = pdfPath;
+    // Open PDF fullscreen on mobile
+    window.open(pdfPath, "_blank");
   } else {
     // Embed PDF on desktop
+    const viewer = document.getElementById("viewer");
     viewer.src = `${pdfPath}#view=FitH`;
+  }
+
+  if (isMobile()) {
+    document.getElementById("sidebar").classList.remove("open");
   }
 }
 
