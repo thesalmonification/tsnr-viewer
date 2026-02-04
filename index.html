@@ -94,6 +94,7 @@ body {
   flex: 1;
   border: none;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ---------- MOBILE MENU BUTTON ---------- */
@@ -219,7 +220,7 @@ function openPDF(file) {
     sidebar.classList.remove("open");
   }
 
-  const path = `pdfs/${file}`;
+  const path = `pdfs/${file}#view=FitH`;
   fetch(path)
     .then(r => viewer.src = r.ok ? path : "pdfs/default.pdf")
     .catch(() => viewer.src = "pdfs/default.pdf");
