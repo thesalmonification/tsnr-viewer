@@ -1,11 +1,12 @@
 const abstracts = [
 
+  // Scientific
   {
     title: "Could Elevated Intracranial Pressure Be Associated with Pituitary Dysfunction?",
     category: "Scientific",
     author: "Huda Zoori",
     institution: "UTHealth Houston",
-    file: "abstract_01.pdf"
+    file: "Scientific/Could Elevated Intracranial Pressure Be Associated with Pituitary Dysfunction.pdf"
   },
 
   {
@@ -13,7 +14,7 @@ const abstracts = [
     category: "Scientific",
     author: "Sacha Baldeosingh",
     institution: "UTHealth Houston",
-    file: "abstract_05.pdf"
+    file: "Scientific/Intracranial Atherosclerosis and Thrombectomy_ Modifiable Risks and Outcomes in Large Vessel Occlusion Stroke.pdf"
   },
 
   {
@@ -21,7 +22,7 @@ const abstracts = [
     category: "Scientific",
     author: "Souradeep Bhattacharya",
     institution: "Texas A&M EnMed",
-    file: "abstract_09.pdf"
+    file: "Scientific/Evaluation of Conventional Deep Learning and Slice-Aware Models For High Sensitivity Intracranial Hemorrhage Coverage.pdf"
   },
 
   {
@@ -29,15 +30,15 @@ const abstracts = [
     category: "Scientific",
     author: "Sahar Alizada",
     institution: "MD Anderson Cancer Center",
-    file: "abstract_11.pdf"
+    file: "Scientific/Preoperative Enhancing-Tumor Volumetrics Predict Survival in Adult-Type Diffuse Glioma.pdf"
   },
 
   {
-    title: "Results of the QUANTI CNS study: Efficacy and Safety of gadoquatrane in patients undergoing contrast-enhanced MRI of the CNS at reduced Gadolinium dose compared to macrocyclic GBCAs.",
+    title: "Results of the QUANTI CNS study: Efficacy and Safety of gadoquatrane in patients undergoing contrast-enhanced MRI of the CNS at reduced Gadolinium dose compared to macrocyclic GBCAs",
     category: "Scientific",
     author: "Christopher Hancock",
     institution: "HALODx",
-    file: "abstract_12.pdf"
+    file: "Scientific/Results of the QUANTI CNS study_ Efficacy and Safety of gadoquatrane in patients undergoing contrast-enhanced MRI of the CNS at reduced Gadolinium dose compared to macrocyclic GBCAs.pdf"
   },
 
   {
@@ -45,7 +46,7 @@ const abstracts = [
     category: "Scientific",
     author: "Anav Chopra",
     institution: "Texas A&M EnMed",
-    file: "abstract_13.pdf"
+    file: "Scientific/PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations.pdf"
   },
 
   {
@@ -53,7 +54,7 @@ const abstracts = [
     category: "Scientific",
     author: "Fatmaelzahraa Badr",
     institution: "Maimonides Medical Center",
-    file: "abstract_14.pdf"
+    file: "Scientific/Impact of Hospital Setting on the Utilization of Percutaneous versus Open Drainage for Spinal Epidural Abscess.pdf"
   },
 
   {
@@ -61,7 +62,7 @@ const abstracts = [
     category: "Scientific",
     author: "Stephan Bannikov",
     institution: "Texas A&M EnMed",
-    file: "abstract_15.pdf"
+    file: "Scientific/VascuVision_ AI-Powered Real-Time Collision Detection and Early Warning System for Endovascular Interventions.pdf"
   },
 
   {
@@ -69,7 +70,7 @@ const abstracts = [
     category: "Scientific",
     author: "Hamza Salim",
     institution: "MD Anderson Cancer Center",
-    file: "abstract_16.pdf"
+    file: "Scientific/MRI Radiomics for Survival Prediction in Brain Metastases_ A Machine Learning Analysis.pdf"
   },
 
   {
@@ -77,7 +78,7 @@ const abstracts = [
     category: "Scientific",
     author: "Santiago Aristizabal",
     institution: "UTHealth Houston",
-    file: "abstract_17.pdf"
+    file: "Scientific/Vessel Wall Remodeling Index and Pathologic Plaque Burden as Quantitative Markers to Differentiate Intracranial Arterial Pathologies in High-Resolution Vessel Wall MRI.pdf"
   },
 
   {
@@ -85,31 +86,40 @@ const abstracts = [
     category: "Scientific",
     author: "Santiago Aristizabal",
     institution: "UTHealth Houston",
-    file: "abstract_18.pdf"
+    file: "Scientific/Association Between Quantitative Vessel Wall MRI Metrics and Acute Stroke Across Intracranial Vascular Pathologies.pdf"
   },
 
   {
-    title: "Transient Alterations in Brain Glucose Metabolism After High-Dose Melphalan Conditioning in Multiple Myeloma: A Longitudinal FDG-PET Study",
+    title: "Voxel-Based Transient Alterations in Brain Glucose Metabolism After High-Dose Melphalan Conditioning in Multiple Myeloma: A Longitudinal FDG-PET Study",
     category: "Scientific",
     author: "Ahmed Msherghi",
     institution: "MD Anderson Cancer Center",
-    file: "abstract_19.pdf"
+    file: "Scientific/Voxel-Based Transient Alterations in Brain Glucose Metabolism After High-Dose Melphalan Conditioning in Multiple Myeloma_ A Longitudinal FDG-PET Study.pdf"
   },
 
   {
-    title: "Cerebellar Endometriosis",
+    title: "Development and Validation of the MISTA Score for Predicting Rupture Risk in Brain Arteriovenous Malformations",
+    category: "Scientific",
+    author: "Hamza Salim",
+    institution: "MD Anderson Cancer Center",
+    file: "Scientific/Development and Validation of the MISTA Score for Predicting Rupture Risk in Brain Arteriovenous Malformations.pdf"
+  },
+
+  // Excerpta
+  {
+    title: "Cerebellar Endometriosis: When Gynecology Meets Neurosurgery",
     category: "Excerpta",
     author: "Huda Zoori",
     institution: "UTHealth Houston",
-    file: "abstract_02.pdf"
+    file: "Excerpta/Cerebellar Endometriosis_ When Gynecology Meets Neurosurgery. .pdf"
   },
 
   {
-    title: "Lowe's Syndrome",
+    title: "Lowe Syndrome: Neuroimaging Spectrum Including Rare Craniocervical Junction Dysplasia in an Adult Patient",
     category: "Excerpta",
     author: "Huda Zoori",
     institution: "UTHealth Houston",
-    file: "abstract_03.pdf"
+    file: "Excerpta/Lowe Syndrome_ Neuroimaging Spectrum Including Rare Craniocervical Junction Dysplasia in an Adult Patient.pdf"
   },
 
   {
@@ -117,7 +127,7 @@ const abstracts = [
     category: "Excerpta",
     author: "Sacha Baldeosingh",
     institution: "UTHealth Houston",
-    file: "abstract_04.pdf"
+    file: "Excerpta/Spinal Cord Involvement of Toxoplasmosis_ A Rare Manifestation.pdf"
   },
 
   {
@@ -125,7 +135,7 @@ const abstracts = [
     category: "Excerpta",
     author: "Junaid Kalair",
     institution: "Houston Methodist Hospital",
-    file: "abstract_06.pdf"
+    file: "Excerpta/Recognizing SMART Syndrome_ Imaging Evolution, Pitfalls, and Differentiation from Recurrence.pdf"
   },
 
   {
@@ -133,7 +143,7 @@ const abstracts = [
     category: "Excerpta",
     author: "Adam Stroh",
     institution: "UTHealth Houston",
-    file: "abstract_07.pdf"
+    file: "Excerpta/Radiologic Diagnosis of Cerebral Air Embolism_ A Rare but Critical Entity.pdf"
   },
 
   {
@@ -141,7 +151,7 @@ const abstracts = [
     category: "Excerpta",
     author: "Adam Stroh",
     institution: "UTHealth Houston",
-    file: "abstract_10.pdf"
+    file: "Excerpta/Intraventricular Cavernous Malformation_ A Rare Entity in an Unusual Location.pdf"
   },
 
   {
@@ -149,7 +159,7 @@ const abstracts = [
     category: "Excerpta",
     author: "Bryan Ubanwa",
     institution: "UT Health San Antonio",
-    file: "abstract_20.pdf"
+    file: "Excerpta/Multinodular and Vacuolating Neuronal Tumor Presenting with Neuropsychiatric Decompensation in an Adult with Lennox-Gestaut Syndrome.pdf"
   },
 
   {
@@ -157,16 +167,15 @@ const abstracts = [
     category: "Excerpta",
     author: "Kinsey Lano",
     institution: "Houston Methodist Hospital",
-    file: "abstract_21.pdf"
+    file: "Excerpta/Aberrant Internal Carotid Artery.pdf"
   },
-
 
   {
     title: "Rare Case of Aortic Spinal Fistula",
     category: "Excerpta",
     author: "Aman Jaiswal",
     institution: "UTHealth Houston",
-    file: "abstract_23.pdf"
+    file: "Excerpta/Rare Case of Aortic Spinal Fistula.pdf"
   },
 
   {
@@ -174,23 +183,16 @@ const abstracts = [
     category: "Excerpta",
     author: "Aman Jaiswal",
     institution: "UTHealth Houston",
-    file: "abstract_24.pdf"
+    file: "Excerpta/Rare Case of IAC Meningioma.pdf"
   },
 
+  // Educational
   {
-    title: "Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group: What Neuroradiologists Must Know",
+    title: "Extranodal Rosi-Dorfman Disease of the Head and Neck: A Pictorial Review of Your Friendly Tumor Mimic",
     category: "Educational",
-    author: "Adam Stroh",
-    institution: "UTHealth Houston",
-    file: "abstract_08.pdf"
-  },
-
-  {
-    title: "Malignant Cervical Lymph Nodes: Key Imaging Features on Ultrasound, CT, and PET/CT",
-    category: "Educational",
-    author: "Ceylan Altintas Taslicay",
-    institution: "UT Southwestern Medical Center",
-    file: "abstract_25.pdf"
+    author: "",
+    institution: "",
+    file: "Educational/Extranodal Rosi-Dorfman Disease of the Head and Neck_ A Pictorial Review of Your Friendly Tumor Mimic.pdf"
   },
 
   {
@@ -198,7 +200,7 @@ const abstracts = [
     category: "Educational",
     author: "Jawad Khan",
     institution: "Houston Methodist Hospital",
-    file: "abstract_26.pdf"
+    file: "Educational/From Detection to Decision_ Multimodality Imaging and Prognostic Scoring in Spinal Metastatic Disease.pdf"
   },
 
   {
@@ -206,15 +208,15 @@ const abstracts = [
     category: "Educational",
     author: "Jawad Khan",
     institution: "Houston Methodist Hospital",
-    file: "abstract_27.pdf"
+    file: "Educational/Imaging Mimics of Spinal Metastatic Disease_ Diagnostic Pitfalls and Differentiation Strategies.pdf"
   },
 
   {
-    title: "Spinal Cord Gliomas, glioneuronal, and neuronal tumors in the 2021 WHO CNS Central Neural System Classification: A Pictorial and Pathological Review",
+    title: "Malignant Cervical Lymph Nodes: Key Imaging Features on Ultrasound, CT, and PET/CT",
     category: "Educational",
-    author: "Chloe Barakat",
-    institution: "MD Anderson Cancer Center",
-    file: "abstract_28.pdf"
+    author: "Ceylan Altintas Taslicay",
+    institution: "UT Southwestern Medical Center",
+    file: "Educational/Malignant Cervical Lymph Nodes_ Key Imaging Features on Ultrasound, CT, and PET_CT.pdf"
   },
 
   {
@@ -222,16 +224,78 @@ const abstracts = [
     category: "Educational",
     author: "Ceylan Altintas Taslicay",
     institution: "UT Southwestern Medical Center",
-    file: "abstract_29.pdf"
+    file: "Educational/Pictorial Review of a Surprising Tumor Mimic of the Central Nervous System_ Extranodal Rosai-Dorfman Disease .pdf"
   },
 
-    {
-    title: "Development and Validation of the MISTA Score for Predicting Rupture Risk in Brain Arteriovenous Malformations",
-    category: "Scientific",
-    author: "Hamza Salim",
+  {
+    title: "Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group: What Neuroradiologists Must Know",
+    category: "Educational",
+    author: "Adam Stroh",
+    institution: "UTHealth Houston",
+    file: "Educational/Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group_ What Neuroradiologists Must Know.pdf"
+  },
+
+  {
+    title: "Spinal Cord Gliomas, glioneuronal, and neuronal tumors in the 2021 WHO CNS Central Neural System Classification: A Pictorial and Pathological Review",
+    category: "Educational",
+    author: "Chloe Barakat",
     institution: "MD Anderson Cancer Center",
-    file: "abstract_30.pdf"
-  }
-  
+    file: "Educational/Spinal Cord Gliomas, glioneuronal, and neuronal tumors in the 2021 WHO CNS Central Neural System Classification_ A Pictorial and Pathological Review.pdf"
+  },
+
+  // Posters
+  {
+    title: "Aberrant Carotid Artery",
+    category: "Poster",
+    author: "Kinsey Lano",
+    institution: "Houston Methodist Hospital",
+    file: "Posters/Aberrant Carotid Artery.pdf"
+  },
+
+  {
+    title: "Multinodular and Vacuolating Neuronal Tumor with Lennox-Gastaut Syndrome",
+    category: "Poster",
+    author: "Bryan Ubanwa",
+    institution: "UT Health San Antonio",
+    file: "Posters/Multinodular and Vacuolating Neuronal Tumor with Lennox Gestaut Syndrome.pdf"
+  },
+
+  {
+    title: "PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations",
+    category: "Poster",
+    author: "Anav Chopra",
+    institution: "Texas A&M EnMed",
+    file: "Posters/PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations.pdf"
+  },
+
+  {
+    title: "Radiologic Diagnosis of Cerebral Air Embolism: A Rare but Critical Entity",
+    category: "Poster",
+    author: "Adam Stroh",
+    institution: "UTHealth Houston",
+    file: "Posters/Radiologic Diagnosis of Cerebral Air Embolism A Rare but Critical Entity.pdf"
+  },
+
+  {
+    title: "Voxel-Based Transient Alterations in Brain Glucose Metabolism in Multiple Myeloma",
+    category: "Poster",
+    author: "Ahmed Msherghi",
+    institution: "MD Anderson Cancer Center",
+    file: "Posters/Voxel Based Transient Alterations in Brain Glucose Metabolism in Multiple Myeloma.pdf"
+  },
+  {
+    title: "Extranodal Rosi-Dorfman Disease of the Head and Neck: A Pictorial Review of Your Friendly Tumor Mimic",
+    category: "Educational",
+    author: "Ceylan Altintas Taslicay",
+    institution: "UT Southwestern",
+    file: "Educational/Extranodal Rosi-Dorfman Disease of the Head and Neck_ A Pictorial Review of Your Friendly Tumor Mimic.pdf"
+  },
+    {
+    title: "Spinal Cord Gliomas, Glioneuronal, and Neuronal Tumors in the 2021 WHO CNS Central Neural System Classification",
+    category: "Poster",
+    author: "Chloe Barakat",
+    institution: "MD Anderson Cancer Center",
+    file: "Posters/Spinal Cord Gliomas, Glioneuronal, and Neuronal Tumors in the 2021 WHO CNS Central Neural System Classification.pdf"
+  },
 
 ];
