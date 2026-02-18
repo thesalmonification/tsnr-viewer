@@ -190,8 +190,8 @@ const abstracts = [
   {
     title: "Extranodal Rosi-Dorfman Disease of the Head and Neck: A Pictorial Review of Your Friendly Tumor Mimic",
     category: "Educational",
-    author: "",
-    institution: "",
+    author: "Ceylan Altintas Taslicay",
+    institution: "UT Southwestern Medical Center",
     file: "Educational/Extranodal Rosi-Dorfman Disease of the Head and Neck_ A Pictorial Review of Your Friendly Tumor Mimic.pdf"
   },
 
