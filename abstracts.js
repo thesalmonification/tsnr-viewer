@@ -46,7 +46,8 @@ const abstracts = [
     category: "Scientific",
     author: "Anav Chopra",
     institution: "Texas A&M EnMed",
-    file: "Scientific/PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations.pdf"
+    file: "Scientific/PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations.pdf",
+    poster: "Posters/PET-Guided Machine Learning Refinement of MRI Tumor Boundaries without Manual Annotations.pdf"
   },
 
   {
@@ -62,7 +63,8 @@ const abstracts = [
     category: "Scientific",
     author: "Stephan Bannikov",
     institution: "Texas A&M EnMed",
-    file: "Scientific/VascuVision_ AI-Powered Real-Time Collision Detection and Early Warning System for Endovascular Interventions.pdf"
+    file: "Scientific/VascuVision_ AI-Powered Real-Time Collision Detection and Early Warning System for Endovascular Interventions.pdf",
+    poster: "Posters/VascuVision.pdf"
   },
 
   {
@@ -94,7 +96,8 @@ const abstracts = [
     category: "Scientific",
     author: "Ahmed Msherghi",
     institution: "MD Anderson Cancer Center",
-    file: "Scientific/Voxel-Based Transient Alterations in Brain Glucose Metabolism After High-Dose Melphalan Conditioning in Multiple Myeloma_ A Longitudinal FDG-PET Study.pdf"
+    file: "Scientific/Voxel-Based Transient Alterations in Brain Glucose Metabolism After High-Dose Melphalan Conditioning in Multiple Myeloma_ A Longitudinal FDG-PET Study.pdf",
+    poster: "Posters/Voxel Based Transient Alterations in Brain Glucose Metabolism in Multiple Myeloma.pdf"
   },
 
   {
@@ -135,7 +138,8 @@ const abstracts = [
     category: "Excerpta",
     author: "Junaid Kalair",
     institution: "Houston Methodist Hospital",
-    file: "Excerpta/Recognizing SMART Syndrome_ Imaging Evolution, Pitfalls, and Differentiation from Recurrence.pdf"
+    file: "Excerpta/Recognizing SMART Syndrome_ Imaging Evolution, Pitfalls, and Differentiation from Recurrence.pdf",
+    poster: "Posters/Recognizing SMART Syndrome Imaging Evolution Pitfalls and Differentiation from Recurrence.pdf"
   },
 
   {
@@ -143,7 +147,8 @@ const abstracts = [
     category: "Excerpta",
     author: "Adam Stroh",
     institution: "UTHealth Houston",
-    file: "Excerpta/Radiologic Diagnosis of Cerebral Air Embolism_ A Rare but Critical Entity.pdf"
+    file: "Excerpta/Radiologic Diagnosis of Cerebral Air Embolism_ A Rare but Critical Entity.pdf",
+    poster: "Posters/Radiologic Diagnosis of Cerebral Air Embolism A Rare but Critical Entity.pdf"
   },
 
   {
@@ -159,7 +164,8 @@ const abstracts = [
     category: "Excerpta",
     author: "Bryan Ubanwa",
     institution: "UT Health San Antonio",
-    file: "Excerpta/Multinodular and Vacuolating Neuronal Tumor Presenting with Neuropsychiatric Decompensation in an Adult with Lennox-Gestaut Syndrome.pdf"
+    file: "Excerpta/Multinodular and Vacuolating Neuronal Tumor Presenting with Neuropsychiatric Decompensation in an Adult with Lennox-Gestaut Syndrome.pdf",
+    poster: "Posters/Multinodular and Vacuolating Neuronal Tumor with Lennox Gestaut Syndrome.pdf"
   },
 
   {
@@ -167,7 +173,8 @@ const abstracts = [
     category: "Excerpta",
     author: "Kinsey Lano",
     institution: "Houston Methodist Hospital",
-    file: "Excerpta/Aberrant Internal Carotid Artery.pdf"
+    file: "Excerpta/Aberrant Internal Carotid Artery.pdf",
+    poster: "Posters/Aberrant Carotid Artery.pdf"
   },
 
   {
@@ -216,7 +223,8 @@ const abstracts = [
     category: "Educational",
     author: "Ceylan Altintas Taslicay",
     institution: "UT Southwestern Medical Center",
-    file: "Educational/Malignant Cervical Lymph Nodes_ Key Imaging Features on Ultrasound, CT, and PET_CT.pdf"
+    file: "Educational/Malignant Cervical Lymph Nodes_ Key Imaging Features on Ultrasound, CT, and PET_CT.pdf",
+    poster: "Posters/Cervical Lymph Node Features.pdf"
   },
 
   {
@@ -240,7 +248,8 @@ const abstracts = [
     category: "Educational",
     author: "Chloe Barakat",
     institution: "MD Anderson Cancer Center",
-    file: "Educational/Spinal Cord Gliomas, glioneuronal, and neuronal tumors in the 2021 WHO CNS Central Neural System Classification_ A Pictorial and Pathological Review.pdf"
+    file: "Educational/Spinal Cord Gliomas, glioneuronal, and neuronal tumors in the 2021 WHO CNS Central Neural System Classification_ A Pictorial and Pathological Review.pdf",
+    poster: "Posters/Spinal Cord Gliomas, Glioneuronal, and Neuronal Tumors in the 2021 WHO CNS Central Neural System Classification.pdf"
   },
 
   // Posters
@@ -296,6 +305,30 @@ const abstracts = [
     author: "Chloe Barakat",
     institution: "MD Anderson Cancer Center",
     file: "Posters/Spinal Cord Gliomas, Glioneuronal, and Neuronal Tumors in the 2021 WHO CNS Central Neural System Classification.pdf"
+  },
+
+  {
+    title: "Malignant Cervical Lymph Nodes: Key Imaging Features on Ultrasound, CT, and PET/CT",
+    category: "Poster",
+    author: "Ceylan Altintas Taslicay",
+    institution: "UT Southwestern Medical Center",
+    file: "Posters/Cervical Lymph Node Features.pdf"
+  },
+
+  {
+    title: "Recognizing SMART Syndrome: Imaging Evolution, Pitfalls, and Differentiation from Recurrence",
+    category: "Poster",
+    author: "Junaid Kalair",
+    institution: "Houston Methodist Hospital",
+    file: "Posters/Recognizing SMART Syndrome Imaging Evolution Pitfalls and Differentiation from Recurrence.pdf"
+  },
+
+  {
+    title: "VascuVision: AI-Powered Real-Time Collision Detection and Early Warning System for Endovascular Interventions",
+    category: "Poster",
+    author: "Stephan Bannikov",
+    institution: "Texas A&M EnMed",
+    file: "Posters/VascuVision.pdf"
   },
 
 ];

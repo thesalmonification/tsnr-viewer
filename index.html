@@ -102,6 +102,28 @@ body {
 
 
 
+/* ---------- POSTER BUTTON ---------- */
+#poster-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 370px;
+  background: var(--blue-medium);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#poster-btn:hover {
+  background: var(--blue-dark);
+}
+
 /* ---------- QR WIDGET ---------- */
 #qr-widget {
   position: fixed;
@@ -134,6 +156,9 @@ body {
 @media (max-width: 900px) {
   #qr-widget {
     display: none;
+  }
+  #poster-btn {
+    display: none !important;
   }
 
   /*body {
@@ -190,6 +215,9 @@ body {
   <iframe id="viewer"></iframe>
 </div>
 
+<!-- POSTER BUTTON (desktop only, shown when current abstract has a poster) -->
+<button id="poster-btn" onclick="openPoster()">View Poster</button>
+
 <!-- QR WIDGET (desktop only) -->
 <div id="qr-widget">
   <a href="https://tsnr-viewer.vercel.app" target="_blank">
@@ -238,7 +266,7 @@ function render() {
   );
 
   list.innerHTML = filtered.map(a => `
-    <div class="item" onclick="openPDF('${a.file}')">
+    <div class="item" onclick="openPDF('${a.file}', '${a.poster || ''}')">
       <b>${a.title}</b><br>
       <span class="category-label">${a.category}</span><br>
       <span style="font-size:13px">${a.author}</span><br>
@@ -248,20 +276,31 @@ function render() {
 }
 
 /* ---------- PDF LOADER ---------- */
-function openPDF(file) {
+let currentPoster = '';
+
+function openPDF(file, poster) {
   const pdfPath = `pdfs/${file}`;
 
   if (isMobile()) {
-    // Open PDF fullscreen on mobile
     window.open(pdfPath, "_blank");
   } else {
-    // Embed PDF on desktop
     const viewer = document.getElementById("viewer");
     viewer.src = `${pdfPath}#view=FitH`;
   }
 
   if (isMobile()) {
     document.getElementById("sidebar").classList.remove("open");
+  }
+
+  currentPoster = poster || '';
+  const posterBtn = document.getElementById("poster-btn");
+  posterBtn.style.display = (!isMobile() && currentPoster) ? 'block' : 'none';
+}
+
+function openPoster() {
+  if (currentPoster) {
+    const viewer = document.getElementById("viewer");
+    viewer.src = `pdfs/${currentPoster}#view=FitH`;
   }
 }
 
