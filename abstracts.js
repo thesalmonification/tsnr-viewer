@@ -194,13 +194,7 @@ const abstracts = [
   },
 
   // Educational
-  {
-    title: "Extranodal Rosi-Dorfman Disease of the Head and Neck: A Pictorial Review of Your Friendly Tumor Mimic",
-    category: "Educational",
-    author: "Ceylan Altintas Taslicay",
-    institution: "UT Southwestern Medical Center",
-    file: "Educational/Extranodal Rosi-Dorfman Disease of the Head and Neck_ A Pictorial Review of Your Friendly Tumor Mimic.pdf"
-  },
+
 
   {
     title: "From Detection to Decision: Multimodality Imaging and Prognostic Scoring in Spinal Metastatic Disease",
