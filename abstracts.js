@@ -182,7 +182,8 @@ const abstracts = [
     category: "Excerpta",
     author: "Aman Jaiswal",
     institution: "UTHealth Houston",
-    file: "Excerpta/Rare Case of Aortic Spinal Fistula.pdf"
+    file: "Excerpta/Rare Case of Aortic Spinal Fistula.pdf",
+    poster: "Posters/Memorable Cases Spine Rare Case of Aortic Spinal Fistula.pdf"
   },
 
   {
@@ -201,7 +202,8 @@ const abstracts = [
     category: "Educational",
     author: "Jawad Khan",
     institution: "Houston Methodist Hospital",
-    file: "Educational/From Detection to Decision_ Multimodality Imaging and Prognostic Scoring in Spinal Metastatic Disease.pdf"
+    file: "Educational/From Detection to Decision_ Multimodality Imaging and Prognostic Scoring in Spinal Metastatic Disease.pdf",
+    poster: "Posters/From Detection to Decision Multimodality Imaging and Prognositc Scoring in Spinal Metastatic Disease.pdf"
   },
 
   {
@@ -209,7 +211,8 @@ const abstracts = [
     category: "Educational",
     author: "Jawad Khan",
     institution: "Houston Methodist Hospital",
-    file: "Educational/Imaging Mimics of Spinal Metastatic Disease_ Diagnostic Pitfalls and Differentiation Strategies.pdf"
+    file: "Educational/Imaging Mimics of Spinal Metastatic Disease_ Diagnostic Pitfalls and Differentiation Strategies.pdf",
+    poster: "Posters/Imaging Mimics of Spinal Metastatic Disease Diagnostic Pitfalls and Differentiation Strategies.pdf"
   },
 
   {
@@ -234,7 +237,8 @@ const abstracts = [
     category: "Educational",
     author: "Adam Stroh",
     institution: "UTHealth Houston",
-    file: "Educational/Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group_ What Neuroradiologists Must Know.pdf"
+    file: "Educational/Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group_ What Neuroradiologists Must Know.pdf",
+    poster: "Posters/Simplified Imaging Based Approach to Updated 2021 Edition Who Classification of CNS Tumors in Pediatrics.pdf"
   },
 
   {
@@ -323,6 +327,46 @@ const abstracts = [
     author: "Stephan Bannikov",
     institution: "Texas A&M EnMed",
     file: "Posters/VascuVision.pdf"
+  },
+
+  {
+    title: "From Detection to Decision: Multimodality Imaging and Prognostic Scoring in Spinal Metastatic Disease",
+    category: "Poster",
+    author: "Jawad Khan",
+    institution: "Houston Methodist Hospital",
+    file: "Posters/From Detection to Decision Multimodality Imaging and Prognositc Scoring in Spinal Metastatic Disease.pdf"
+  },
+
+  {
+    title: "Imaging Mimics of Spinal Metastatic Disease: Diagnostic Pitfalls and Differentiation Strategies",
+    category: "Poster",
+    author: "Jawad Khan",
+    institution: "Houston Methodist Hospital",
+    file: "Posters/Imaging Mimics of Spinal Metastatic Disease Diagnostic Pitfalls and Differentiation Strategies.pdf"
+  },
+
+  {
+    title: "From Detection to Decision in Spinal Metastatic Disease",
+    category: "Poster",
+    author: "Jawad Khan",
+    institution: "Houston Methodist Hospital",
+    file: "Posters/Khan & Fung. Detection to Decision in Spinal Metastatic Disease. TSNR 2026 Presentation Final.pdf"
+  },
+
+  {
+    title: "Rare Case of Aortic Spinal Fistula",
+    category: "Poster",
+    author: "Aman Jaiswal",
+    institution: "UTHealth Houston",
+    file: "Posters/Memorable Cases Spine Rare Case of Aortic Spinal Fistula.pdf"
+  },
+
+  {
+    title: "Simplified Imaging Based Approach to Updated 2021 WHO Classification of CNS Tumors of the Pediatric Age Group: What Neuroradiologists Must Know",
+    category: "Poster",
+    author: "Adam Stroh",
+    institution: "UTHealth Houston",
+    file: "Posters/Simplified Imaging Based Approach to Updated 2021 Edition Who Classification of CNS Tumors in Pediatrics.pdf"
   },
 
 ];

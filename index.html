@@ -124,39 +124,9 @@ body {
   background: var(--blue-dark);
 }
 
-/* ---------- QR WIDGET ---------- */
-#qr-widget {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: white;
-  border: 2px solid var(--blue-medium);
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 1000;
-}
-
-#qr-widget img {
-  display: block;
-  width: 100px;
-  height: 100px;
-}
-
-#qr-widget span {
-  display: block;
-  font-size: 11px;
-  color: var(--blue-medium);
-  margin-top: 6px;
-  font-weight: bold;
-}
 
 /* ---------- MOBILE ---------- */
 @media (max-width: 900px) {
-  #qr-widget {
-    display: none;
-  }
   #poster-btn {
     display: none !important;
   }
@@ -218,13 +188,6 @@ body {
 <!-- POSTER BUTTON (desktop only, shown when current abstract has a poster) -->
 <button id="poster-btn" onclick="openPoster()">View Poster</button>
 
-<!-- QR WIDGET (desktop only) -->
-<div id="qr-widget">
-  <a href="https://tsnr-viewer.vercel.app" target="_blank">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://tsnr-viewer.vercel.app" alt="QR Code">
-  </a>
-  <span>View On Your Phone</span>
-</div>
 
 <script src="abstracts.js"></script>
 
